@@ -11,7 +11,7 @@ public class Book {
     //Constructors
 
     /**
-     * Constructos a Book instance with the given name, author and price
+     * Constructs a Book instance with the given name, author and price
      */
     public Book(String name, Author author, double price) {
         this.name = name;
@@ -20,7 +20,7 @@ public class Book {
     }
 
     /**
-     * Constructos a Book instance with the given name, author, price and qty
+     * Constructs a Book instance with the given name, author, price and qty
      */
     public Book(String name, Author author, double price, int qty) {
         this.name = name;
@@ -57,6 +57,18 @@ public class Book {
     //Setter for instance variable qty
     public void setQty(int qty) {
         this.qty = qty;
+    }
+
+    public String getAuthorName() {
+        return author.getName();
+    }
+
+    public String getAuthorEmail() {
+        return author.getEmail();
+    }
+
+    public char getAuthorGender() {
+        return author.getGender();
     }
 
     /**
