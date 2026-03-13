@@ -1,4 +1,4 @@
-package Practica2_ComposicionAgregacion.ej1.Introduccion;
+package Practica2_ComposicionAgregacion.ej2.LibroConMultiplesAutores;
 
 public class Author {
     //private instance variables
