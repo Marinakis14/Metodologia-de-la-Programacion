@@ -11,7 +11,7 @@ public class Book {
     //Constructors
 
     /**
-     * Constructs a Book instance with the given name, author and price
+     * Constructs a Book instance with the given name, authors and price
      */
     public Book(String name, Author[] authors, double price) {
         this.name = name;
@@ -20,7 +20,7 @@ public class Book {
     }
 
     /**
-     * Constructs a Book instance with the given name, author, price and qty
+     * Constructs a Book instance with the given name, authors, price and qty
      */
     public Book(String name, Author[] authors, double price, int qty) {
         this.name = name;
@@ -34,7 +34,7 @@ public class Book {
         return name;
     }
 
-    //Getter for instance variable author
+    //Getter for instance variable authors
     public Author[] getAuthors() {
         return authors;
     }
@@ -71,7 +71,7 @@ public class Book {
     }
 
     /**
-     * Return a self-descriptive string of this instance in the form of Book[name=?,Author[name=?,email=?,gender=?],price=?,qty=?]
+     * Return a self-descriptive string of this instance in the form of Book[name=n,authors={Author[name=n,email=e,gender=g],...},price=p,qty=q]
      */
     public String toString() {
         String cadena = "Book[name=" + name + ",authors={";
