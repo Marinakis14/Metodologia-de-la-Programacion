@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class InvoiceTest {
 
-    // Cliente de prueba: ID 1, Nombre "Juan", Descuento 20%
     private Customer dummyCustomer = new Customer(1, "Juan", 20);
 
     @Test
@@ -61,11 +60,9 @@ class InvoiceTest {
 
     @Test
     void getAmountAfterDiscount() {
-        // Monto 500, Descuento 20% -> El 80% de 500 es 400
         Invoice inv = new Invoice(101, dummyCustomer, 500.0);
         assertEquals(400.0, inv.getAmountAfterDiscount(), 0.001);
 
-        // Probar con descuento 0
         Customer noDiscount = new Customer(3, "Pedro", 0);
         inv.setCustomer(noDiscount);
         assertEquals(500.0, inv.getAmountAfterDiscount());
@@ -74,7 +71,6 @@ class InvoiceTest {
     @Test
     void testToString() {
         Invoice inv = new Invoice(101, dummyCustomer, 500.0);
-        // Nota: Esto depende de cómo sea el toString() de tu clase Customer
         String customerString = dummyCustomer.toString();
         String expected = "Invoice[id=101,customer=" + customerString + ",amount=500.0]";
         assertEquals(expected, inv.toString());

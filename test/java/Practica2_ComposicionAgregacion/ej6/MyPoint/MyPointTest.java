@@ -35,7 +35,6 @@ class MyPointTest {
     void testGetXY() {
         MyPoint p = new MyPoint(3, 7);
         int[] expected = {3, 7};
-        // Importante: usar assertArrayEquals para comparar el contenido del array
         assertArrayEquals(expected, p.getXY());
     }
 
@@ -47,7 +46,7 @@ class MyPointTest {
 
     @Test
     void testDistanceXY() {
-        // Distancia entre (0,0) y (3,4) debe ser 5.0 (triángulo pitagórico)
+        // Distancia entre (0,0) y (3,4) debe ser 5.0
         MyPoint p = new MyPoint(0, 0);
         assertEquals(5.0, p.distance(3, 4), 0.001);
     }

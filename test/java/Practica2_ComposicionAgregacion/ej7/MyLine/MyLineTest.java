@@ -61,23 +61,19 @@ class MyLineTest {
 
     @Test
     void testGetLength() {
-        // Línea de (0,0) a (3,4) debe medir 5.0
         MyLine l = new MyLine(0, 0, 3, 4);
         assertEquals(5.0, l.getLength(), 0.001);
     }
 
     @Test
     void testGetGradient() {
-        // Línea a 45 grados (1,1) -> (2,2)
         MyLine l = new MyLine(1, 1, 2, 2);
-        // atan2(1, 1) es PI/4
         assertEquals(Math.PI / 4, l.getGradient(), 0.001);
     }
 
     @Test
     void testToString() {
         MyLine l = new MyLine(1, 2, 3, 4);
-        // Ajustado al formato exacto de tu metodo toString
         assertEquals("MyLine[begin= (1,2) , end= (3, 4)]", l.toString());
     }
 }

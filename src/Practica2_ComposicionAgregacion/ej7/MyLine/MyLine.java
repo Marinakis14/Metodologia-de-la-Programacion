@@ -110,7 +110,7 @@ public class MyLine {
 
     //Returns the distance of this MyLine
     public double getLength() {
-        return Math.sqrt((getBeginX() - getEndX()) * (getBeginX() - getEndX()) + (getBeginY() - getEndY()) * (getBeginY() - getEndY()));
+        return begin.distance(end);
     }
 
     //Returns the gradient in radians of this MyLine

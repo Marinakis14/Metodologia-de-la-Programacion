@@ -1,8 +1,6 @@
 package Practica2_ComposicionAgregacion.ej5.ClienteyPrueba;
 
 import org.junit.jupiter.api.Test;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AccountTest {
@@ -46,18 +44,9 @@ class AccountTest {
 
     @Test
     void withdrawFailure() {
-        // Para capturar el System.out.println y asegurar cobertura total
-        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(outContent));
-
         Account a = new Account(1, dummy, 10.0);
-        a.withdraw(20.0);
-
-        assertEquals(10.0, a.getBalance());
-        assertTrue(outContent.toString().contains("amount withdrawn exceeds the current balance!"));
-
-        // Resetear la salida estándar
-        System.setOut(System.out);
+        Account newBalance = a.withdraw(20.0);
+        assertEquals(10.0, newBalance.getBalance());
     }
 
     @Test
