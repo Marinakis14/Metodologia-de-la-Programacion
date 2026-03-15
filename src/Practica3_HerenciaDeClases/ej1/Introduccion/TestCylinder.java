@@ -21,7 +21,7 @@ public class TestCylinder {
             Cylinder c3 = new Cylinder(2.0, 5.0);
             System.out.println("Cilindro 3: Radio=" + c3.getRadius()
                     + ", Altura=" + c3.getHeight()
-                    + ", Area base=" + c3.getArea() // Método heredado de Circle
+                    + ", Area base=" + c3.getArea()
                     + ", Volumen=" + c3.getVolume());
 
             // 4. Test con todos los parámetros
