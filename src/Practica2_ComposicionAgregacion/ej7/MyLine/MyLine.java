@@ -3,77 +3,128 @@ package Practica2_ComposicionAgregacion.ej7.MyLine;
 import Practica2_ComposicionAgregacion.ej6.MyPoint.MyPoint;
 
 public class MyLine {
+
+    //private instance MyPoint instances
     private MyPoint begin;
     private MyPoint end;
 
-    public MyLine(int x1, int y1, int x2, int y2){
-        this.begin = new MyPoint(x1,y1);
-        this.end = new MyPoint(x2,y2);
+    //Constructors
+
+    /**
+     * Constructs a MyLine instance with the given x1, y1, x2 and y2
+     */
+    public MyLine(int x1, int y1, int x2, int y2) {
+        this.begin = new MyPoint(x1, y1);
+        this.end = new MyPoint(x2, y2);
     }
-    public MyLine(MyPoint begin, MyPoint end){
+
+    /**
+     * Constructs a MyLine instance with the two given MyPoint instances
+     */
+    public MyLine(MyPoint begin, MyPoint end) {
         this.begin = begin;
         this.end = end;
     }
-    public MyPoint getBegin(){
+
+    //Getter for MyPoint instance begin
+    public MyPoint getBegin() {
         return begin;
     }
-    public void serBegin(MyPoint begin){
+
+    //Setter for MyPoint instance begin
+    public void setBegin(MyPoint begin) {
         this.begin = begin;
     }
-    public MyPoint getEnd(){
+
+    //Getter for MyPoint instance end
+    public MyPoint getEnd() {
         return end;
     }
-    public void setEnd(MyPoint end){
+
+    //Setter for MyPoint instance end
+    public void setEnd(MyPoint end) {
         this.end = end;
     }
-    public int getBeginX(){
+
+    //Getter for instance MyPoint begin variable x
+    public int getBeginX() {
         return begin.getX();
     }
-    public void setBeginX(int x){
+
+    //Setter for instance MyPoint begin variable x
+    public void setBeginX(int x) {
         begin.setX(x);
     }
-    public int getBeginY(){
+
+    //Getter for instance MyPoint begin variable y
+    public int getBeginY() {
         return begin.getY();
     }
-    public void setBeginY(int y){
+
+    //Setter for instance MyPoint begin variable y
+    public void setBeginY(int y) {
         begin.setY(y);
     }
-    public int getEndX(){
+
+    //Getter for instance MyPoint end variable x
+    public int getEndX() {
         return end.getX();
     }
-    public void setEndX(int x){
+
+    //Setter for instance MyPoint end variable x
+    public void setEndX(int x) {
         end.setX(x);
     }
-    public int getEndY(){
+
+    //Getter for instance MyPoint end variable y
+    public int getEndY() {
         return end.getY();
     }
-    public void setEndY(int y){
+
+    //Setter for instance MyPoint end variable y
+    public void setEndY(int y) {
         end.setY(y);
     }
-    public int[] getBeginXY(){
-        return new int[] { begin.getX(), begin.getY()};
+
+    //Getter for instance MyPoint begin variables x and y
+    public int[] getBeginXY() {
+        return new int[]{begin.getX(), begin.getY()};
     }
-    public void setBeginXY(int x, int y){
+
+    //Setter for instance MyPoint begin variables x and y
+    public void setBeginXY(int x, int y) {
         begin.setX(x);
         begin.setY(y);
     }
-    public int[] getEndXY(){
-        return new int[] { end.getX(), end.getY()};
+
+    //Getter for instance MyPoint end variables x and y
+    public int[] getEndXY() {
+        return new int[]{end.getX(), end.getY()};
     }
-    public void setEndXY(int x, int y){
+
+    //Setter for instance MyPoint end variables x and y
+    public void setEndXY(int x, int y) {
         end.setX(x);
         end.setY(y);
     }
-    public double getLength(){
-        return Math.sqrt((getBeginX() - getEndX())*(getBeginX() - getEndX()) + (getBeginY()-getEndY())*(getBeginY()-getEndY()));
+
+    //Returns the distance of this MyLine
+    public double getLength() {
+        return begin.distance(end);
     }
-    public double getGradient(){
-         int xDiff = getEndX() - getBeginX();
-         int yDiff = getEndY() - getBeginY();
-         return Math.atan2(yDiff,xDiff);
+
+    //Returns the gradient in radians of this MyLine
+    public double getGradient() {
+        int xDiff = getEndX() - getBeginX();
+        int yDiff = getEndY() - getBeginY();
+        return Math.atan2(yDiff, xDiff);
     }
-    public String toString(){
-        return "MyLine[begin= (" + getBeginX() + "," + getBeginY() +") , end= (" + getEndX() + ", " + getEndY() + ")]";
+
+    /**
+     * Returns a self-descriptive string of this instance in the form of MyLine[begin=(x1,y1),end=(x2,y2)]
+     */
+    public String toString() {
+        return "MyLine[begin= (" + getBeginX() + "," + getBeginY() + ") , end= (" + getEndX() + ", " + getEndY() + ")]";
     }
 
 }

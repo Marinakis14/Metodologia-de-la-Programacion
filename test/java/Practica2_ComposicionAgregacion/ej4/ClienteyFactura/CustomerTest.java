@@ -33,7 +33,6 @@ class CustomerTest {
     @Test
     void testToString() {
         Customer customer = new Customer(88, "Tan Ah Teck", 10);
-        // El formato esperado es name(id)(discount%)
         String expected = "Tan Ah Teck(88)(10%)";
         assertEquals(expected, customer.toString(), "El formato del toString no coincide con el esperado");
     }
