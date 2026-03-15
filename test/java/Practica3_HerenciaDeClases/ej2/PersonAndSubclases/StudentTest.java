@@ -1,4 +1,4 @@
-package Practica3_HerenciaDeClases.ej2.PersonYsubclases;
+package Practica3_HerenciaDeClases.ej2.PersonAndSubclases;
 
 import org.junit.jupiter.api.Test;
 
