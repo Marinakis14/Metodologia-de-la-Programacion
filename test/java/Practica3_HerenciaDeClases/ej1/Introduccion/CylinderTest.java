@@ -1,5 +1,4 @@
-package java.Practica3_HerenciaDeClases.ej1;
-import Practica3_HerenciaDeClases.ej1.Introduccion.Cylinder;
+package Practica3_HerenciaDeClases.ej1.Introduccion;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,7 +12,6 @@ class CylinderTest {
         assertEquals("red", c1.getColor());
         assertEquals(1.0, c1.getHeight(), 0.01);
 
-        // Test constructor con altura (el que me has pasado en la foto)
         // Este prueba la llamada a super(radius)
         double radioTest = 5.5;
         Cylinder c2 = new Cylinder(radioTest);
@@ -52,12 +50,12 @@ class CylinderTest {
     @Test
     void testToString() {
         Cylinder c = new Cylinder(1.0, 2.0, "yellow");
-        String result = c.toString();
+        assertEquals("Cylinder: subclass of Circle[radius=1.0 color=yellow] height=2.0",c.toString());
+    }
 
-        // Como Cylinder NO tiene toString, usa el de Circle.
-        // Comprobamos que al menos los datos del padre están ahí.
-        assertTrue(result.contains("Circle")); // Cambiamos Cylinder por Circle
-        assertTrue(result.contains("radius=1.0"));
-        assertTrue(result.contains("color=yellow"));
+    @Test
+    void testGetArea() {
+        Cylinder c = new Cylinder(1,1,"blue");
+        assertEquals(12.56637,c.getArea(),0.0001);
     }
 }

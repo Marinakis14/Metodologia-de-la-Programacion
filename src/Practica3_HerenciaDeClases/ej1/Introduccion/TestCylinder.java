@@ -27,7 +27,10 @@ public class TestCylinder {
             // 4. Test con todos los parámetros
             // super(3.0, "blue") envía los datos directamente al constructor del padre
             Cylinder c4 = new Cylinder(3.0, 4.0, "blue");
-            System.out.println("Cilindro 4: " + c4.toString());
+            System.out.println("Cilindro 4: " + c4);
+
+            // 5. Test del toString()
+            System.out.println(c1);
         }
 }
 

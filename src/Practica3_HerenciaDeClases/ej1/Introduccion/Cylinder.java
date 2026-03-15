@@ -52,6 +52,21 @@ public class Cylinder extends Circle {
      * Returns the volume of this Cylinder instance
      */
     public double getVolume() {
-        return getArea() * height;
+        return super.getArea() * height;
     }
+
+    @Override
+    public double getArea() {
+        return 2*super.getRadius()*height*Math.PI + 2*super.getArea();
+    }
+    //Al hacer esta modificacion el metodo getVolume utiliza este nuevo metodo getArea que hemos creado en vez de
+    //El metodo getArea de la superclase Cicle por lo que tenemos que cambiarlo de getArea() a super.getArea()
+
+    /** Returns a self-descriptive string of this class in the form of Cylinder: subclass of Circle[radius=? color=?] height=? */
+    @Override
+    public String toString() { // in Cylinder class
+        return "Cylinder: subclass of " + super.toString() // use Circle's toString()
+                + " height=" + height;
+    }
+
 }
