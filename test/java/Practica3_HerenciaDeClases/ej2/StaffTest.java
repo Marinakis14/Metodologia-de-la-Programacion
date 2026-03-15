@@ -1,5 +1,6 @@
-package Practica3_HerenciaDeClases.ej2.PersonYsubclases;
+package java.Practica3_HerenciaDeClases.ej2;
 
+import Practica3_HerenciaDeClases.ej2.PersonYsubclases.Staff;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
