@@ -1,4 +1,4 @@
-package Practica3_HerenciaDeClases.ej4.PointYmovablePoint;
+package Practica3_HerenciaDeClases.ej4.PointAndMovablePoint;
 
 public class MovablePoint extends Point {
 
