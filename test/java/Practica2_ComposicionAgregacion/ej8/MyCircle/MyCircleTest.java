@@ -1,6 +1,7 @@
-package Practica2_ComposicionAgregacion.ej8.MyCircle;
+package java.Practica2_ComposicionAgregacion.ej8.MyCircle;
 
 import Practica2_ComposicionAgregacion.ej6.MyPoint.MyPoint;
+import Practica2_ComposicionAgregacion.ej8.MyCircle.MyCircle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
