@@ -72,10 +72,8 @@ public class MovablePoint extends Point {
 
     //Adds the values of xSpeed and ySpeed to this x and y
     public MovablePoint move() {
-        float x = this.getX();
-        float y = this.getY();
-        x += xSpeed;
-        y += ySpeed;
+        this.setX(this.getX() + xSpeed);
+        this.setY(this.getY() + ySpeed);
         return this;
     }
 
