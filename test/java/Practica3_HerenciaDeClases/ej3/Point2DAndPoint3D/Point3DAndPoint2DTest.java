@@ -1,10 +1,9 @@
-package java.Practica3_HerenciaDeClases.ej3.Point2DyPoint3D;
-import Practica3_HerenciaDeClases.ej3.Point2DyPoint3D.Point2D;
-import Practica3_HerenciaDeClases.ej3.Point2DyPoint3D.Point3D;
+package Practica3_HerenciaDeClases.ej3.Point2DAndPoint3D;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class Point3DTest {
+class Point3DAndPoint2DTest {
     @Test
     void testPoint2D() {
             // Validacion del constructor con parametros y getters de Point2D
@@ -27,7 +26,7 @@ class Point3DTest {
             p2.setXY(10.0f, 20.0f);
             assertArrayEquals(new float[]{10.0f, 20.0f}, p2.getXY(), 0.001f);
 
-            // Validacion del formato de salida del metodo to string
+            // Validacion del formato de salida del metodo toString()
             assertEquals("(10.0,20.0)", p2.toString());
         }
 
@@ -51,7 +50,7 @@ class Point3DTest {
             p3.setXYZ(4.0f, 5.0f, 6.0f);
             assertEquals(6.0f, p3.getZ(), 0.001f);
 
-            // Comprobamos que getXYZ devuelve un array de tamano 3 correcto
+            // Comprobamos que getXYZ devuelve un array de tamaño 3 correcto
             float[] esperado = {4.0f, 5.0f, 6.0f};
             assertArrayEquals(esperado, p3.getXYZ(), 0.001f);
 

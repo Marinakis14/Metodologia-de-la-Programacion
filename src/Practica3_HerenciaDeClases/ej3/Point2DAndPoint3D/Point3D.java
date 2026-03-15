@@ -1,4 +1,4 @@
-package Practica3_HerenciaDeClases.ej3.Point2DyPoint3D;
+package Practica3_HerenciaDeClases.ej3.Point2DAndPoint3D;
 
 public class Point3D extends Point2D {
 
@@ -18,7 +18,6 @@ public class Point3D extends Point2D {
      */
     public Point3D(){
         super();
-        this.z = 0.0f;
     }
 
     //Getter for instance variable z

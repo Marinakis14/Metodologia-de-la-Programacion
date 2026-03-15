@@ -1,4 +1,4 @@
-package Practica3_HerenciaDeClases.ej3.Point2DyPoint3D;
+package Practica3_HerenciaDeClases.ej3.Point2DAndPoint3D;
 
 public class Point2D {
 
@@ -19,8 +19,6 @@ public class Point2D {
      * Constructs a Point2D instance with default values
      */
     public Point2D(){
-        this.x = 0.0f;
-        this.y = 0.0f;
     }
 
     //Getter for instance variable x
@@ -61,7 +59,6 @@ public class Point2D {
     /**
      * Returns a self-descriptive string in the form of (x,y)
      */
-    @Override
     public String toString(){
         return "("+ x + ","+ y +")";
     }
