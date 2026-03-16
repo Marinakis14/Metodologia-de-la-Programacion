@@ -1,4 +1,4 @@
-package Practica4_DiferenciaComposicionHerencia.ej2;
+package Practica4_DiferenciaComposicionHerencia.ej2.CircleCylinder;
 
 public class TestCylinder {
 

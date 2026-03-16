@@ -1,4 +1,4 @@
-package Practica3_HerenciaDeClases.ej5;
+package Practica3_HerenciaDeClases.ej5.ShapeAndSubclases;
 
 // Test program to verify the behavior of Shape, Circle, Rectangle and Square
 public class TestShape {

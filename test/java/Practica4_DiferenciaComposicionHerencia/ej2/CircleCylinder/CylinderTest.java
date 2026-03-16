@@ -1,4 +1,4 @@
-package Practica4_DiferenciaComposicionHerencia.ej2;
+package Practica4_DiferenciaComposicionHerencia.ej2.CircleCylinder;
 
 import org.junit.jupiter.api.Test;
 
@@ -42,12 +42,9 @@ class CylinderTest {
         assertEquals("green", c4.getBase().getColor());
 
         // Volume
-        assertEquals(Math.PI * 4 * 4 * 5, c1.getVolume());
+        assertEquals(Math.PI * 2 * 2 * 5, c1.getVolume());
 
         // toString
-        assertEquals(
-                "Cylinder[base=Circle[radius=2.0,color=blue],height=5.0]",
-                c1.toString()
-        );
+        assertEquals("Cylinder[base=Circle[radius=2.0,color=blue],height=5.0]", c1.toString());
     }
 }

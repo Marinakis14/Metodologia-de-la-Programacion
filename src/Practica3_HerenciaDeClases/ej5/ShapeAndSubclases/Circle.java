@@ -1,4 +1,4 @@
-package Practica3_HerenciaDeClases.ej5;
+package Practica3_HerenciaDeClases.ej5.ShapeAndSubclases;
 
 // Circle class that extends Shape
 // It inherits the attributes and methods of Shape

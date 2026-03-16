@@ -1,4 +1,4 @@
-package Practica1_Clases.ej1.Introduccion;
+package Practica4_DiferenciaComposicionHerencia.ej2.CircleCylinder;
 
 /**
  * The Circle class models a circle with a radius and color.
@@ -58,7 +58,7 @@ public class Circle { // Save as "Circle.java"
      * Return a self-descriptive string of this instance in the form of Circle[radius=?,color=?]
      */
     public String toString() {
-        return "Circle[radius=" + radius + " color=" + color + "]";
+        return "Circle[radius=" + radius + ",color=" + color + "]";
     }
 
     /**

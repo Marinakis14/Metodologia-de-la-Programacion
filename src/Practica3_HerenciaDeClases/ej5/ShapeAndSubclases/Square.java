@@ -1,4 +1,4 @@
-package Practica3_HerenciaDeClases.ej5;
+package Practica3_HerenciaDeClases.ej5.ShapeAndSubclases;
 
 // Square class that extends Rectangle
 // A square is a special type of rectangle where width = length

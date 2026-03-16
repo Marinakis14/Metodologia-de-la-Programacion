@@ -1,4 +1,4 @@
-package Practica3_HerenciaDeClases.ej5;
+package Practica3_HerenciaDeClases.ej5.ShapeAndSubclases;
 
 // Base class that represents a generic geometric shape
 public class Shape {

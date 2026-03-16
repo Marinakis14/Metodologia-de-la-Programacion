@@ -1,4 +1,4 @@
-package Practica3_HerenciaDeClases.ej5;
+package Practica3_HerenciaDeClases.ej5.ShapeAndSubclases;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej6;
+package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej6.SuperclaseAbstractaAnimalYSubclases;
 
 import org.junit.jupiter.api.Test;
 
@@ -13,8 +13,8 @@ class AnimalTest {
         Animal a2 = new Cat("Mimi");
         Animal a3 = new BigDog("Thor");
 
-        assertEquals("Rex", ((Dog) a1).name);
-        assertEquals("Mimi", ((Cat) a2).name);
-        assertEquals("Thor", ((BigDog) a3).name);
+        assertEquals("Rex", a1.name);
+        assertEquals("Mimi", a2.name);
+        assertEquals("Thor", a3.name);
     }
 }

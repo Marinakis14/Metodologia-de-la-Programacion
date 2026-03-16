@@ -17,27 +17,31 @@ public class MovablePoint implements Movable {
     }
 
     // Move up
+    @Override
     public void moveUp() {
-        y -= ySpeed;
-    }
-
-    // Move down
-    public void moveDown() {
         y += ySpeed;
     }
 
+    // Move down
+    @Override
+    public void moveDown() {
+        y -= ySpeed;
+    }
+
     // Move left
+    @Override
     public void moveLeft() {
         x -= xSpeed;
     }
 
     // Move right
+    @Override
     public void moveRight() {
         x += xSpeed;
     }
 
     // Text description
     public String toString() {
-        return "(" + x + "," + y + ") speed=(" + xSpeed + "," + ySpeed + ")";
+        return "(" + x + "," + y + "),speed=(" + xSpeed + "," + ySpeed + ")";
     }
 }

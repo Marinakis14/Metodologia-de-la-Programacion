@@ -1,4 +1,4 @@
-package Practica3_HerenciaDeClases.ej5;
+package Practica3_HerenciaDeClases.ej5.ShapeAndSubclases;
 
 // Rectangle class that extends Shape
 // It inherits attributes such as color and filled from Shape

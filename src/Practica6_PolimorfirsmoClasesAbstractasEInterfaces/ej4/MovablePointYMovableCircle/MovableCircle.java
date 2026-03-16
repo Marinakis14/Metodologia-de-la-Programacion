@@ -13,27 +13,32 @@ public class MovableCircle implements Movable {
     }
 
     // Move up (the center moves)
+    @Override
     public void moveUp() {
         center.moveUp();
     }
 
     // Move down
+    @Override
     public void moveDown() {
         center.moveDown();
     }
 
     // Move left
+    @Override
     public void moveLeft() {
         center.moveLeft();
     }
 
     // Move right
+    @Override
     public void moveRight() {
         center.moveRight();
     }
 
     // Text description
+    @Override
     public String toString() {
-        return center.toString() + ", radius=" + radius;
+        return center.toString() + ",radius=" + radius;
     }
 }
