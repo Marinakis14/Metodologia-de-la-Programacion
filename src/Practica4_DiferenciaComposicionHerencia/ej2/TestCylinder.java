@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.Practica4.ej2;
+package Practica4_DiferenciaComposicionHerencia.ej2;
 
 public class TestCylinder {
 
