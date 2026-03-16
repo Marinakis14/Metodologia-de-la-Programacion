@@ -1,4 +1,4 @@
-package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej4;
+package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej4.MovablePointYMovableCircle;
 
     // Test program to demonstrate the use of MovableCircle
     public class TestMovable {

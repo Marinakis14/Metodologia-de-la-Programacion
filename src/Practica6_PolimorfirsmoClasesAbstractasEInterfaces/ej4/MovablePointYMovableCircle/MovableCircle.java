@@ -1,4 +1,4 @@
-package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej4;
+package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej4.MovablePointYMovableCircle;
 
 // Class that represents a movable circle
 public class MovableCircle implements Movable {

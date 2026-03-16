@@ -1,4 +1,4 @@
-package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej1;
+package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej1.SuperclaseAbstractaShapeYSusSubclasesConcretas;
 
 public class TestShape {
     public static void main(String[] args) {

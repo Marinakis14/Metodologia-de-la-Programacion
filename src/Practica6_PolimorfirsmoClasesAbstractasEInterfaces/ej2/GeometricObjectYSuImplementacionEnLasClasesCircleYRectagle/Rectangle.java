@@ -1,4 +1,4 @@
-package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej2;
+package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej2.GeometricObjectYSuImplementacionEnLasClasesCircleYRectagle;
 
 // Rectangle class that implements the GeometricObject interface
 public class Rectangle implements GeometricObject {

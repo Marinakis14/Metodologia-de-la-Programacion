@@ -1,4 +1,4 @@
-package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej2;
+package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej2.GeometricObjectYSuImplementacionEnLasClasesCircleYRectagle;
 
 // Test program to verify the implementation of the interface
 public class TestGeometricObject {

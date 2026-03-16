@@ -1,4 +1,4 @@
-package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej3;
+package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej3.MovableYSuImplementaciónEnLaClaseMovablePoint;
 
 public class TestMovable {
     public static void main(String[] args) {

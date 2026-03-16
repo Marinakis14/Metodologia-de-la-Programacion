@@ -1,6 +1,6 @@
-package es.uah.matcomp.mp.e1.ejerciciosclases.Practica4.ej2;
+package es.uah.matcomp.mp.e1.ejerciciosclases.Practica4_DiferenciaComposicionHerencia.ej2;
 
-public class Cylinder {
+public class Cylinder  {
 
     private Circle base;
     private double height;
