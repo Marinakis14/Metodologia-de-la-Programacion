@@ -8,27 +8,27 @@ public class TestMovable {
         Movable m1 = new MovablePoint(0, 0, 5, 10);
 
         System.out.println("Initial Position ");
-        System.out.println(m1); // Llama al toString()
+        System.out.println(m1); // Hace el toString() de MovablePoint
 
         //Probar movimiento hacia arriba
-        System.out.println("\nMoving Up");
+        System.out.println("Move up");
         m1.moveUp();
         System.out.println("Current: " + m1);
 
         //Probar movimiento a la derecha
-        System.out.println("\nMoving Right");
+        System.out.println("Move Right");
         m1.moveRight();
         System.out.println("Current: " + m1);
 
         //Probar varios movimientos seguidos
-        System.out.println("\nMoving Down and Left");
+        System.out.println("Move Down and Left");
         m1.moveDown();
         m1.moveLeft();
         System.out.println("Final position: " + m1);
 
         //Crear otro objeto directamente como MovablePoint
         MovablePoint p1 = new MovablePoint(10, 10, 2, 2);
-        System.out.println("\nTesting second point ");
+        System.out.println("Testing second point ");
         System.out.println("Point 2: " + p1);
         p1.moveDown();
         System.out.println("Point 2 after moveDown: " + p1);
