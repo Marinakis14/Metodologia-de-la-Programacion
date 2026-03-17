@@ -56,7 +56,7 @@ public abstract class Shape {
     public abstract double getPerimeter();
 
     /**
-     * Returns a self-descriptive string in the form of Shape[color,filled]
+     * Returns a self-descriptive string in the form of Shape[color=?,filled=?]
      */
     @Override
     public String toString(){

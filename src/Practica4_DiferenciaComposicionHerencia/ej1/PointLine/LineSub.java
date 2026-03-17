@@ -110,4 +110,13 @@ public class LineSub extends MyPoint {
         return Math.atan2(yDiff, xDiff);
     }
 
+    /**
+     * Como ya hemos visto la clase Line se puede hacer tanto por composicion como por herencia pero en este caso
+     * Es mejor hacerlo por composicion ya que tiene una estructura mas sencilla y facil de entender, porque en el
+     * metodo de herencia el punto inicial es la linea misma, es mas intuitivo verlo como la union de dos puntos
+     * que es el caso de la composicion, además si más adelante quieres hacer algun cambio, como por ejemplo poner
+     * los puntos de la linea en 3D, solo habria que hacer algun cambio poniendo los puntos de los que depende la linea
+     * en 3D, pero con herencia habria que cambiar la estructura entera
+     */
+
 }

@@ -3,39 +3,48 @@ package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej1.SuperclaseAbstrac
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Unit Test for Shape class.
+ * Since Shape is abstract, we test its logic using a concrete implementation.
+ */
 public class ShapeTest {
 
-    @Test
-    void testShapeMethods() {
-        // Creamos una clase anónima de Shape
-        Shape s = new Shape("green", false) {
-            public double getArea() { return 0; }
-            public double getPerimeter() { return 0; }
-        };
-
-        // 1. Probar Constructor y Getters
-        assertEquals("green", s.getColor());
-        assertFalse(s.isFilled());
-
-        // 2. Probar Setters
-        s.setColor("black");
-        s.setFilled(true);
-        assertEquals("black", s.getColor());
-        assertTrue(s.isFilled());
-
-        // 3. Probar toString
-        assertEquals("Shape[color=black,filled=true]", s.toString());
+    // Clase interna para poder instanciar y probar la lógica de Shape
+    class TestShape extends Shape {
+        public TestShape() { super(); }
+        public TestShape(String c, boolean f) { super(c, f); }
+        @Override public double getArea() { return 0; }
+        @Override public double getPerimeter() { return 0; }
     }
 
     @Test
     void testDefaultConstructor() {
-        // Probamos también el constructor vacío
-        Shape sDefault = new Shape() {
-            public double getArea() { return 0; }
-            public double getPerimeter() { return 0; }
-        };
+        Shape s = new TestShape();
+        assertEquals("red", s.getColor());
+        assertTrue(s.isFilled());
+    }
 
-        assertEquals("red", sDefault.getColor());
-        assertTrue(sDefault.isFilled());
+    @Test
+    void testParameterizedConstructor() {
+        Shape s = new TestShape("blue", false);
+        assertEquals("blue", s.getColor());
+        assertFalse(s.isFilled());
+    }
+
+    @Test
+    void testSettersAndGetters() {
+        Shape s = new TestShape();
+        s.setColor("green");
+        s.setFilled(false);
+
+        assertEquals("green", s.getColor());
+        assertFalse(s.isFilled());
+    }
+
+    @Test
+    void testToString() {
+        Shape s = new TestShape("yellow", true);
+        String expected = "Shape[color=yellow,filled=true]";
+        assertEquals(expected, s.toString());
     }
 }

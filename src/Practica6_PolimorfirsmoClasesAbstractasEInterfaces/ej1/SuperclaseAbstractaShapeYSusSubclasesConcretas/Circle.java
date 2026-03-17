@@ -59,7 +59,7 @@ public class Circle extends Shape {
     }
 
     /**
-     * Returns a self-descriptive string in the form of Circle[Shape[color,filled],radius]
+     * Returns a self-descriptive string in the form of Circle[Shape[color=?,filled=?],radius=?]
      */
     @Override
     public String toString() {

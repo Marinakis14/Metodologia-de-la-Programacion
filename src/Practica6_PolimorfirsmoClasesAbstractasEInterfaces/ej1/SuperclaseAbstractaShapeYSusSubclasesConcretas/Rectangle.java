@@ -73,7 +73,7 @@ public class Rectangle extends Shape { // Added "extends"
     }
 
     /**
-     * Returns a self-descriptive string in the form of Rectangle[Shape[],width,length]
+     * Returns a self-descriptive string in the form of Rectangle[Shape[color=?,filled=?],width=?,length=?]
      */
     @Override
     public String toString() {

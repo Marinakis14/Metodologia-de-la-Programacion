@@ -54,7 +54,7 @@ public class Square extends Rectangle {
     }
 
     /**
-     * Returns a self-descriptive string in the form of Square[Rectangle[Shape[],width,length]]
+     * Returns a self-descriptive string in the form of Square[Rectangle[Shape[color=?,filled=?],width=?,length=?]]
      */
     @Override
     public String toString() {
