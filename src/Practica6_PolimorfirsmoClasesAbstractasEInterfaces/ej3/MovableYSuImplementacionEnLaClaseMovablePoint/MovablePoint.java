@@ -1,4 +1,4 @@
-package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej3.MovableYSuImplementaciónEnLaClaseMovablePoint;
+package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej3.MovableYSuImplementacionEnLaClaseMovablePoint;
 
 public class MovablePoint implements Movable{
 

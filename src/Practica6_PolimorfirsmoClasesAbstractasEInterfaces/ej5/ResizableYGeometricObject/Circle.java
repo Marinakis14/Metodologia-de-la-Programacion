@@ -2,12 +2,14 @@ package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej5.ResizableYGeometr
 
 public class Circle implements GeometricObject {
     protected double radius;
+
     // Constructor that initializes the radius of the circle
     public Circle(double radius) {
         this.radius = radius;
     }
+
     // Method to give the text description of the circle
-    public String toString(){
+    public String toString() {
         return "Circle[radius=" + radius + "]";
     }
 
@@ -19,7 +21,7 @@ public class Circle implements GeometricObject {
 
     // Method to give the area of the circle
     @Override
-    public double getArea(){
+    public double getArea() {
         return Math.PI * radius * radius;
     }
 }

@@ -5,12 +5,12 @@ public class TestAnimal {
 
     public static void main(String[] args) {
 
-        // Creating animals using polymorphism
+        // Creating animals
         Animal a1 = new Cat("Kitty");
         Animal a2 = new Dog("Buddy");
         Animal a3 = new BigDog("Max");
 
-        // Each object calls its own implementation of greets()
+        // Calling diferent greets() methods
         a1.greets();  // Cat -> Meow
         a2.greets();  // Dog -> Woof
         a3.greets();  // BigDog -> Wooow
@@ -19,7 +19,7 @@ public class TestAnimal {
         Dog d1 = new Dog("Rocky");
         Dog d2 = new BigDog("Bruno");
 
-        // Calling overloaded methods
+        // Calling diferent greet methods again
         d1.greets(d2); // Dog greeting another dog
         d2.greets(d1); // BigDog greeting a dog
 
@@ -27,7 +27,7 @@ public class TestAnimal {
         BigDog bd1 = new BigDog("Thor");
         BigDog bd2 = new BigDog("Hulk");
 
-        // BigDog greeting another BigDog
+        // Calling the last greet method
         bd1.greets(bd2);
     }
 }

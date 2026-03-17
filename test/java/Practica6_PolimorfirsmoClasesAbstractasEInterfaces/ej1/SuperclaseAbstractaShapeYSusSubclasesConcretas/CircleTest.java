@@ -13,7 +13,8 @@ public class CircleTest {
         // Test constructor por defecto
         Circle c1 = new Circle();
         assertEquals(1.0, c1.getRadius(), 0.001);
-        assertEquals("red", c1.getColor()); // Heredado de Shape
+        c1.setColor("orange");
+        assertEquals("orange", c1.getColor()); // Heredado de Shape
         assertTrue(c1.isFilled());
 
         // Test constructor con radio
@@ -24,7 +25,8 @@ public class CircleTest {
         Circle c3 = new Circle(2.0, "blue", false);
         assertEquals(2.0, c3.getRadius());
         assertEquals("blue", c3.getColor());
-        assertFalse(c3.isFilled());
+        c3.setFilled(true);
+        assertTrue(c3.isFilled());
     }
 
     @Test

@@ -18,10 +18,7 @@ class RectangleTest {
         assertEquals(20.0, r.getPerimeter());
 
         // toString
-        assertEquals(
-                "Rectangle[width=4.0, length=6.0]",
-                r.toString()
-        );
+        assertEquals("Rectangle[width=4.0, length=6.0]", r.toString());
 
         // Polymorphism test
         GeometricObject g = new Rectangle(4.0, 6.0);

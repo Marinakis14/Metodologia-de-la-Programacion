@@ -40,7 +40,9 @@ public class MovablePoint implements Movable {
         x += xSpeed;
     }
 
-    // Text description
+    /**
+     * Returns a self-descriptive string of this instance in the form of (x,y),speed=(x,y)]
+     */
     public String toString() {
         return "(" + x + "," + y + "),speed=(" + xSpeed + "," + ySpeed + ")";
     }

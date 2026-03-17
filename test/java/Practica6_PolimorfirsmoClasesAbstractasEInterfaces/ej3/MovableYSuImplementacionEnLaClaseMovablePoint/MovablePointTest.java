@@ -1,4 +1,4 @@
-package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej3.MovableYSuImplementaciónEnLaClaseMovablePoint;
+package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej3.MovableYSuImplementacionEnLaClaseMovablePoint;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

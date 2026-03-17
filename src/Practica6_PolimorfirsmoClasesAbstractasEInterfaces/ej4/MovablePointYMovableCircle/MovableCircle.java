@@ -36,7 +36,9 @@ public class MovableCircle implements Movable {
         center.moveRight();
     }
 
-    // Text description
+    /**
+     * Returns a self-descriptive string of this instance in the form of (x,y),speed=(x,y),radius=?]
+     */
     @Override
     public String toString() {
         return center.toString() + ",radius=" + radius;

@@ -1,10 +1,9 @@
-package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej3.MovableYSuImplementaciónEnLaClaseMovablePoint;
+package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej3.MovableYSuImplementacionEnLaClaseMovablePoint;
 
 public class TestMovable {
     public static void main(String[] args) {
 
-        // Crear un MovablePoint usando polimorfismo (Interfaz Movable)
-        // x=0, y=0, xSpeed=5, ySpeed=10
+        // Crear un MovablePoint usando polimorfismo con x=0, y=0, xSpeed=5, ySpeed=10
         Movable m1 = new MovablePoint(0, 0, 5, 10);
 
         System.out.println("Initial Position ");

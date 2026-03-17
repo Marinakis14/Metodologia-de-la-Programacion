@@ -10,7 +10,6 @@ package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej4.MovablePointYMova
             MovableCircle c1 = new MovableCircle(5, 5, 2, 2, 10);
 
             // Print the initial position of the circle
-            // This calls the toString() method of MovableCircle
             System.out.println("Initial position: " + c1);
 
             // Move the circle up

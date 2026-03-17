@@ -1,6 +1,7 @@
 package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej5.ResizableYGeometricObject;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -14,7 +15,6 @@ public class CircleTest {
         Circle c = new Circle(radius);
 
         // Verificamos que el radio se asigno correctamente
-        // Como 'radius' es protected, podemos acceder si el test está en el mismo paquete
         assertEquals(5.5, c.radius, 0.001);
     }
 
