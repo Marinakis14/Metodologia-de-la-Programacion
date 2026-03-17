@@ -65,6 +65,11 @@ public class Cylinder {
         return base.getArea() * height;
     }
 
+    //Returns the area of this Cylinder
+    public double getArea() {
+        return base.getArea() * 2 + 2 * Math.PI * base.getRadius();
+    }
+
     /**
      * Returns a self-descriptive string of this instance in the form of Cylinder[base=Circle[radius=?,color=?],height=?]
      */
@@ -72,4 +77,12 @@ public class Cylinder {
     public String toString() {
         return "Cylinder[base=" + base + ",height=" + height + "]";
     }
+
+    /**
+     * En este caso tanto la composicion como la herencia son buenas opciones pero hemos considerado que la composicion
+     * es la mejor opcion ya que no hay que modificar metodos usados en circle como el metodo getArea() que puede dar
+     * problemas si no se tiene cuidado como hemos visto en la practica, sin embargo es verdad que utilizando herencia
+     * hay que escribir menos codigo porque se reutilizan los metodos de circle
+     */
+
 }

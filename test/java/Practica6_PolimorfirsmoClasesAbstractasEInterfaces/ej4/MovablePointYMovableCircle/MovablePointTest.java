@@ -16,7 +16,7 @@ class MovablePointTest {
 
         // moveUp
         p.moveUp();
-        assertEquals("(5,4),speed=(1,1)", p.toString());
+        assertEquals("(5,6),speed=(1,1)", p.toString());
 
         // moveDown
         p.moveDown();

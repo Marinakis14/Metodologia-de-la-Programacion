@@ -53,12 +53,6 @@ public class RectangleTest {
     @Test
     void testToString() {
         Rectangle r = new Rectangle(1.0, 2.0, "yellow", true);
-        String result = r.toString();
-
-        // Verificamos que el formato sea el correcto y contenga los datos
-        assertTrue(result.startsWith("Rectangle["));
-        assertTrue(result.contains("width=1.0"));
-        assertTrue(result.contains("length=2.0"));
-        assertTrue(result.contains("yellow"));
+        assertEquals("Rectangle[Shape[color=yellow,filled=true],width=1.0,length=2.0]",r.toString());
     }
 }

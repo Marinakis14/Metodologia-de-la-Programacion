@@ -44,6 +44,9 @@ class CylinderTest {
         // Volume
         assertEquals(Math.PI * 2 * 2 * 5, c1.getVolume());
 
+        // Area
+        assertEquals(37.69911, c1.getArea(),0.0001);
+
         // toString
         assertEquals("Cylinder[base=Circle[radius=2.0,color=blue],height=5.0]", c1.toString());
     }

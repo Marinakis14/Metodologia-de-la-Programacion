@@ -51,11 +51,7 @@ public class CircleTest {
     @Test
     void testToString() {
         Circle c = new Circle(1.0, "red", true);
-        String result = c.toString();
+        assertEquals("Circle[Shape[color=red,filled=true],radius=1.0]",c.toString());
 
-        // Verificamos que contenga la info de la clase padre y la propia
-        assertTrue(result.contains("Circle"));
-        assertTrue(result.contains("radius=1.0"));
-        assertTrue(result.contains("red"));
     }
 }

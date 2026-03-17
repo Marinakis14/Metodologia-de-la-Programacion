@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Unit Test for Square class to ensure 100% code coverage.
- * Focuses on the synchronization between side, width, and length.
  */
 public class SquareTest {
 
@@ -31,7 +30,7 @@ public class SquareTest {
     }
 
     @Test
-    void testSideSynchronization() {
+    void testSettersGetters() {
         Square s = new Square();
 
         // Probar setSide: debe cambiar ambos
@@ -62,11 +61,6 @@ public class SquareTest {
     @Test
     void testToString() {
         Square s = new Square(3.0);
-        String result = s.toString();
-
-        // Verificamos la estructura de anidación: Square[Rectangle[Shape[...]]]
-        assertTrue(result.startsWith("Square[Rectangle["));
-        assertTrue(result.contains("width=3.0"));
-        assertTrue(result.contains("length=3.0"));
+        assertEquals("Square[Rectangle[Shape[color=red,filled=true],width=3.0,length=3.0]]",s.toString());
     }
 }

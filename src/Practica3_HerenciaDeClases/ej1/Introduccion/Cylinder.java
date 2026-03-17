@@ -60,7 +60,7 @@ public class Cylinder extends Circle {
         return 2*super.getRadius()*height*Math.PI + 2*super.getArea();
     }
     //Al hacer esta modificacion el metodo getVolume utiliza este nuevo metodo getArea que hemos creado en vez de
-    //El metodo getArea de la superclase Cicle por lo que tenemos que cambiarlo de getArea() a super.getArea()
+    //El metodo getArea de la superclase Circle por lo que tenemos que cambiarlo de getArea() a super.getArea()
 
     /** Returns a self-descriptive string of this class in the form of Cylinder: subclass of Circle[radius=? color=?] height=? */
     @Override

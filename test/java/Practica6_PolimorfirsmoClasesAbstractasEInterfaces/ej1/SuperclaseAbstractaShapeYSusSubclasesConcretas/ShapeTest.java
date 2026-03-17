@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Unit Test for Shape class.
- * Since Shape is abstract, we test its logic using a concrete implementation.
+ * Unit Test for Shape class to ensure 100% code coverage
  */
 public class ShapeTest {
 
