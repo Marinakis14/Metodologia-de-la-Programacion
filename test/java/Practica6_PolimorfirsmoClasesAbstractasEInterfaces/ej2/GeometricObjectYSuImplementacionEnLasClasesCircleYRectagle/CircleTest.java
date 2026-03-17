@@ -11,16 +11,8 @@ class CircleTest {
 
         Circle c = new Circle(5.0);
 
-        // Area
         assertEquals(Math.PI * 25, c.getArea());
-
-        // Perimeter
         assertEquals(2 * Math.PI * 5, c.getPerimeter());
-
-        // toString
-        assertEquals(
-                "Circle[radius=5.0]",
-                c.toString()
-        );
+        assertEquals("Circle[radius=5.0]", c.toString());
     }
 }
