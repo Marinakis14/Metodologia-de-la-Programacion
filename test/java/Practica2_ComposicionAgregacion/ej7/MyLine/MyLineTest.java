@@ -2,6 +2,7 @@ package Practica2_ComposicionAgregacion.ej7.MyLine;
 
 import Practica2_ComposicionAgregacion.ej6.MyPoint.MyPoint;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MyLineTest {
@@ -22,11 +23,11 @@ class MyLineTest {
 
         // Test Setters de objetos
         MyPoint p3 = new MyPoint(10, 10);
-        MyPoint p4 = new MyPoint(12,14);
+        MyPoint p4 = new MyPoint(12, 14);
         l2.setBegin(p3);
         l2.setEnd(p4);
         assertEquals(10, l2.getBeginX());
-        assertEquals(12,l2.getEndX());
+        assertEquals(12, l2.getEndX());
     }
 
     @Test

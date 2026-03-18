@@ -7,8 +7,10 @@ public class InvoiceItem {
     private int qty;
     private double unitPrice;
 
-    /** Constructs a InvoiceItem instance with the given id, desc qty and unitPrice */
-    InvoiceItem( String id, String desc, int qty, double unitPrice) {
+    /**
+     * Constructs a InvoiceItem instance with the given id, desc qty and unitPrice
+     */
+    InvoiceItem(String id, String desc, int qty, double unitPrice) {
         this.id = id;
         this.desc = desc;
         this.qty = qty;
@@ -47,10 +49,12 @@ public class InvoiceItem {
 
     // Returns unitPrice*qty
     public double getTotal() {
-        return unitPrice*qty;
+        return unitPrice * qty;
     }
 
-    /** Return a self-descriptive string of this instance in the form of Circle[radius=?,color=?] */
+    /**
+     * Return a self-descriptive string of this instance in the form of Circle[radius=?,color=?]
+     */
     public String toString() {
         return "InvoiceItem[id=" + id + ",desc='" + desc + ",qty=" + qty + ",unitPrice=" + unitPrice + ']';
     }

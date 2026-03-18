@@ -54,7 +54,7 @@ class BookTest {
         // Verifica que la coma y el espacio se pongan correctamente
         assertEquals("Author 1, Author 2", book.getAuthorNames());
 
-        // Caso borde: un solo autor (para cubrir la rama donde no hay coma)
+        // Para cubrir la rama donde no hay coma porque solo hay un author
         Book singleBook = new Book("Solo", new Author[]{auth1}, 10.0);
         assertEquals("Author 1", singleBook.getAuthorNames());
     }

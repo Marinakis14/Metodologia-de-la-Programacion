@@ -19,7 +19,7 @@ public class TestLineSub {
         // Test con objetos MyPoint
         MyPoint p1 = new MyPoint(10, 10);
         MyPoint p2 = new MyPoint(20, 20);
-        LineSub l2 = new LineSub(p1,p2);
+        LineSub l2 = new LineSub(p1, p2);
         System.out.println("Línea 2: " + l2);
         System.out.println("Gradiante l2: " + l2.getGradient() + " radianes");
     }

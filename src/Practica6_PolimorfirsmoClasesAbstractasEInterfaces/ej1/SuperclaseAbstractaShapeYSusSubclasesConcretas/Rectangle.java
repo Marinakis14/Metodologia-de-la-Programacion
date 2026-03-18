@@ -6,16 +6,14 @@ package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej1.SuperclaseAbstrac
 public class Rectangle extends Shape { // Added "extends"
 
     //protected instance variables
-    protected double width;
-    protected double length;
+    protected double width = 1.0;
+    protected double length = 1.0;
 
     /**
      * Default constructor for Rectangle with default dimensions
      */
     public Rectangle() {
         super(); //Calls Shape() constructor
-        this.width = 1.0;
-        this.length = 1.0;
     }
 
     /**

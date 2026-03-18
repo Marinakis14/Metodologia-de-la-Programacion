@@ -6,8 +6,10 @@ public class Time {
     private int minute;
     private int second;
 
-    /** Constructs a Time instance with the given hour, minute and second */
-    Time( int hour, int minute, int second) {
+    /**
+     * Constructs a Time instance with the given hour, minute and second
+     */
+    Time(int hour, int minute, int second) {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
@@ -44,13 +46,15 @@ public class Time {
     }
 
     // Setter for instance Time
-    public void setTime( int hour, int minute, int second) {
+    public void setTime(int hour, int minute, int second) {
         this.hour = hour;
         this.minute = minute;
         this.second = second;
     }
 
-    /** Return a self-descriptive string of this instance in the form of hh:mm:ss */
+    /**
+     * Return a self-descriptive string of this instance in the form of hh:mm:ss
+     */
     public String toString() {
         return String.format("%02d:%02d:%02d", hour, minute, second);
     }

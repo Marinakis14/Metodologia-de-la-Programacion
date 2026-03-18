@@ -6,20 +6,19 @@ package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej1.SuperclaseAbstrac
 public class Circle extends Shape {
 
     //protected instance variable
-    protected double radius;
+    protected double radius = 1.0;
 
     /**
      * Default constructor for Circle with default radius
      */
-    public Circle(){
+    public Circle() {
         super(); //Calls Shape() constructor
-        this.radius = 1.0;
     }
 
     /**
      * Constructs a Circle instance with a specific radius
      */
-    public Circle(double radius){
+    public Circle(double radius) {
         super(); //Calls Shape() constructor
         this.radius = radius;
     }
@@ -27,13 +26,13 @@ public class Circle extends Shape {
     /**
      * Constructs a Circle instance with radius, color and filled status
      */
-    public Circle(double radius, String color, boolean filled){
+    public Circle(double radius, String color, boolean filled) {
         super(color, filled); //Calls Shape(color, filled) constructor
         this.radius = radius;
     }
 
     //Getter for instance variable radius
-    public double getRadius(){
+    public double getRadius() {
         return radius;
     }
 

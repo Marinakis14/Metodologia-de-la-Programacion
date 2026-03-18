@@ -2,8 +2,11 @@ package Practica6_PolimorfirsmoClasesAbstractasEInterfaces.ej3.MovableYSuImpleme
 
 public interface Movable {
     // All the interface methods which are public and abstract by default
-     void moveUp();
-     void moveDown();
-     void moveLeft();
-     void moveRight();
+    void moveUp();
+
+    void moveDown();
+
+    void moveLeft();
+
+    void moveRight();
 }

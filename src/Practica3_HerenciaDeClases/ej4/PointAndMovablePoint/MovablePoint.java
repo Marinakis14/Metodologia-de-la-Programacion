@@ -55,7 +55,7 @@ public class MovablePoint extends Point {
 
     //Getter for instance variables xSpeed and ySpeed
     public float[] getSpeed() {
-        return new float[]{this.xSpeed,this.ySpeed};
+        return new float[]{this.xSpeed, this.ySpeed};
     }
 
     //Setter for instance variables xSpeed and ySpeed
@@ -64,7 +64,9 @@ public class MovablePoint extends Point {
         this.ySpeed = ySpeed;
     }
 
-    /** Returns a self-descriptive string of this instance in the form of (x,y) */
+    /**
+     * Returns a self-descriptive string of this instance in the form of (x,y)
+     */
     @Override
     public String toString() {
         return super.toString() + ",speed=(" + xSpeed + "," + ySpeed + ")";

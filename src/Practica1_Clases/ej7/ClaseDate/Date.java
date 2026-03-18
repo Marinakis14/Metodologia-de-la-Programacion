@@ -6,7 +6,9 @@ public class Date {
     private int month;
     private int year;
 
-    /** Constructs a Date instance with the given day, month, and year */
+    /**
+     * Constructs a Date instance with the given day, month, and year
+     */
     Date(int day, int month, int year) {
         this.day = day;
         this.month = month;
@@ -50,7 +52,9 @@ public class Date {
         this.year = year;
     }
 
-    /** Return a self-descriptive string of this instance in the form of dd/mm/yyyy */
+    /**
+     * Return a self-descriptive string of this instance in the form of dd/mm/yyyy
+     */
     public String toString() {
         return String.format("%02d/%02d/%d", day, month, year);
 

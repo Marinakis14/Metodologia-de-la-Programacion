@@ -18,7 +18,7 @@ class MyTriangleTest {
         MyTriangle t2 = new MyTriangle(p1, p2, p3);
         assertEquals(3.414213, t1.getPerimeter(), 0.0001);
         assertEquals("The triangle is Scalene", t2.getType());
-        assertEquals("MyTriangle[v1=(1,1),v2=(2,2),v3=(2,1)]",t1.toString());
+        assertEquals("MyTriangle[v1=(1,1),v2=(2,2),v3=(2,1)]", t1.toString());
         assertEquals("The triangle is Isosceles", t1.getType());
         //El último caso de que el triangulo sea Equilatero no lo hemos podido probar ya que como hemos mencionado en la clase TestMyTriangle
         //Es imposible generar un triangulo equilatero con coordenadas enteras(int) y es por esto que la cobertura es de un 95% en vez de un 100%

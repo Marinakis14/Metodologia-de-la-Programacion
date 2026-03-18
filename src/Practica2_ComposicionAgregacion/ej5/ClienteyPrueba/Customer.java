@@ -8,7 +8,10 @@ public class Customer {
     private char gender;
 
     //Constructors
-    /** Constructs a Customer instance with the given id, name and discount */
+
+    /**
+     * Constructs a Customer instance with the given id, name and discount
+     */
     public Customer(int id, String name, char gender) { //Hemos deducido que hay un error en la practica ya que pone que el constructor tenga la variable discount en vez de la variable gender y lo hemos cambiado a gender
         this.id = id;
         this.name = name;
@@ -30,7 +33,9 @@ public class Customer {
         return gender;
     }
 
-    /** Return a self-descriptive string of this instance in the form of name(id) */
+    /**
+     * Return a self-descriptive string of this instance in the form of name(id)
+     */
     public String toString() {
         return name + "(" + id + ")";
     }

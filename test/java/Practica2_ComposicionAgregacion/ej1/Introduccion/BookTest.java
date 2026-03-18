@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
 
-    // Instancia de apoyo para los tests
+    // Instancia para los tests
     private Author dummyAuthor = new Author("Tan Ah Teck", "ahteck@nowhere.com", 'm');
 
     @Test
@@ -29,7 +29,6 @@ class BookTest {
 
     @Test
     void getQty() {
-        // Testeamos ambos constructores para asegurar cobertura total
         Book book1 = new Book("Java 1", dummyAuthor, 10.0);
         assertEquals(0, book1.getQty()); // Valor por defecto
 

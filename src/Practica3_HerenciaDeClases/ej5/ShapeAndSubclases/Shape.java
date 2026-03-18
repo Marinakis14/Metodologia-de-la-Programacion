@@ -11,39 +11,39 @@ public class Shape {
 
     // Default constructor
     // Creates a shape with the default color and filled values
-    public Shape(){
+    public Shape() {
     }
 
     // Constructor that initializes color and filled attributes
-    public Shape(String color, boolean filled){
+    public Shape(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
     }
 
     // Getter method for color
-    public String getColor(){
+    public String getColor() {
         return color;
     }
 
     // Setter method for color
-    public void setColor(String color){
+    public void setColor(String color) {
         this.color = color;
     }
 
     // Returns whether the shape is filled or not
-    public boolean isFilled(){
+    public boolean isFilled() {
         return filled;
     }
 
     // Setter method for the filled attribute
-    public void setFilled(boolean filled){
+    public void setFilled(boolean filled) {
         this.filled = filled;
     }
 
     // Returns a text description of the shape
     // This method will also be used by subclasses (Circle, Rectangle, etc.)
     @Override
-    public String toString(){
+    public String toString() {
         return "Shape[ color: " + color + " filled: " + filled + "]";
     }
 }

@@ -8,7 +8,10 @@ public class Customer {
     private int discount;
 
     //Constructors
-    /** Constructs a Customer instance with the given id, name and discount */
+
+    /**
+     * Constructs a Customer instance with the given id, name and discount
+     */
     public Customer(int id, String name, int discount) {
         this.id = id;
         this.name = name;
@@ -35,7 +38,9 @@ public class Customer {
         this.discount = discount;
     }
 
-    /** Return a self-descriptive string of this instance in the form of name(id)(discount%) */
+    /**
+     * Return a self-descriptive string of this instance in the form of name(id)(discount%)
+     */
     public String toString() {
         return name + "(" + id + ")(" + discount + "%)";
     }

@@ -7,13 +7,18 @@ public class Account {
     private int balance = 0;
 
     //Constructors
-    /** Constructs an Account instance with the given id and name and default balance */
+
+    /**
+     * Constructs an Account instance with the given id and name and default balance
+     */
     Account(String id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    /** Constructs an Account instance with the given id, name and balance */
+    /**
+     * Constructs an Account instance with the given id, name and balance
+     */
     Account(String id, String name, int balance) {
         this.id = id;
         this.name = name;
@@ -42,7 +47,7 @@ public class Account {
     }
 
     // subtracts amount from balance or print "amount excceded balance"
-    public int debit (int amount) {
+    public int debit(int amount) {
         if (amount <= balance) {
             this.balance -= amount;
         } else {
@@ -62,7 +67,9 @@ public class Account {
         return balance;
     }
 
-    /** Return a self-descriptive string of this instance in the form of Circle[radius=?,color=?] */
+    /**
+     * Return a self-descriptive string of this instance in the form of Circle[radius=?,color=?]
+     */
     public String toString() {
         return "Account[id=" + id + ",name=" + name + ",balance=" + balance + "]";
     }

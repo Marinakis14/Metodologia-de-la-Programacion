@@ -9,8 +9,11 @@ public class Ball {
     private float yDelta;
 
     //Constructors
-    /** Constructs a Ball instance with the given x, y, radius, xDelta and yDelta */
-    Ball( float x, float y, int radius, float xDelta, float yDelta) {
+
+    /**
+     * Constructs a Ball instance with the given x, y, radius, xDelta and yDelta
+     */
+    Ball(float x, float y, int radius, float xDelta, float yDelta) {
         this.x = x;
         this.y = y;
         this.radius = radius;
@@ -84,7 +87,9 @@ public class Ball {
         this.yDelta = -yDelta;
     }
 
-    /** Return a self-descriptive string of this instance in the form of Ball[(x,y),speed=(xDelta,yDelta)] */
+    /**
+     * Return a self-descriptive string of this instance in the form of Ball[(x,y),speed=(xDelta,yDelta)]
+     */
     public String toString() {
         return "Ball[(" + x + "," + y + "),speed=(" + xDelta + "," + yDelta + ")]";
     }

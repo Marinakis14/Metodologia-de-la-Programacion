@@ -44,7 +44,7 @@ public class Point {
 
     //Getter for instance variables x and y
     public float[] getXY() {
-        return new float[]{this.x,this.y};
+        return new float[]{this.x, this.y};
     }
 
     //Setter for instance variables x and y
@@ -53,7 +53,9 @@ public class Point {
         this.y = y;
     }
 
-    /** Returns a self-descriptive string of this instance in the form of (x,y) */
+    /**
+     * Returns a self-descriptive string of this instance in the form of (x,y)
+     */
     @Override
     public String toString() {
         return "(" + x + "," + y + ")";

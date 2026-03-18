@@ -7,7 +7,6 @@ class AuthorTest {
 
     @Test
     void getName() {
-        // Al instanciarlo aquí, ya cubrimos el constructor
         Author author = new Author("Codigo Limpio", "limpio@java.com");
         assertEquals("Codigo Limpio", author.getName());
     }

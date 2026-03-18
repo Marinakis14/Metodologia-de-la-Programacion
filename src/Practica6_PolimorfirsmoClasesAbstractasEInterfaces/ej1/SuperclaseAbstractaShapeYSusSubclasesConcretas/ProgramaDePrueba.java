@@ -41,8 +41,6 @@ public class ProgramaDePrueba {
         System.out.println(s4.getColor());
         //System.out.println(s4.getSide()); // Error: s4 es tipo Shape y la clase Shape no tiene getSide()
 
-        // Take note that we downcast Shape s4 to Rectangle,
-        // which is a superclass of Square, instead of Square
         Rectangle r2 = (Rectangle) s4; // Upcast de Square a Rectangle (Polimorfismo entre subclases)
         System.out.println(r2);
         System.out.println(r2.getArea()); // Polimorfismo: Ejecuta el área del objeto real (Square)

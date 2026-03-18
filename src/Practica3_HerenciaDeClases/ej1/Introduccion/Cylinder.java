@@ -1,4 +1,5 @@
 package Practica3_HerenciaDeClases.ej1.Introduccion;
+
 import Practica1_Clases.ej1.Introduccion.Circle;
 
 public class Cylinder extends Circle {
@@ -57,12 +58,14 @@ public class Cylinder extends Circle {
 
     @Override
     public double getArea() {
-        return 2*super.getRadius()*height*Math.PI + 2*super.getArea();
+        return 2 * super.getRadius() * height * Math.PI + 2 * super.getArea();
     }
     //Al hacer esta modificacion el metodo getVolume utiliza este nuevo metodo getArea que hemos creado en vez de
     //El metodo getArea de la superclase Circle por lo que tenemos que cambiarlo de getArea() a super.getArea()
 
-    /** Returns a self-descriptive string of this class in the form of Cylinder: subclass of Circle[radius=? color=?] height=? */
+    /**
+     * Returns a self-descriptive string of this class in the form of Cylinder: subclass of Circle[radius=? color=?] height=?
+     */
     @Override
     public String toString() { // in Cylinder class
         return "Cylinder: subclass of " + super.toString() // use Circle's toString()

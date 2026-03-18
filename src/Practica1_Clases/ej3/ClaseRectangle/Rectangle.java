@@ -5,13 +5,17 @@ public class Rectangle {
     private float length;
     private float width;
 
-    /**Constructs a Rectangle instance with default values for length and width */
+    /**
+     * Constructs a Rectangle instance with default values for length and width
+     */
     Rectangle() {
         this.length = 1.0f;
         this.width = 1.0f;
     }
 
-    /**Constructs a Rectangle instance with the given length and width */
+    /**
+     * Constructs a Rectangle instance with the given length and width
+     */
     Rectangle(float length, float width) {
         this.length = length;
         this.width = width;
@@ -37,17 +41,23 @@ public class Rectangle {
         this.width = width;
     }
 
-    /** Returns the area of this Rectangle instance*/
+    /**
+     * Returns the area of this Rectangle instance
+     */
     public double getArea() {
         return length * width;
     }
 
-    /** Returns the perimeter of this Rectangle instance*/
+    /**
+     * Returns the perimeter of this Rectangle instance
+     */
     public double getPerimeter() {
-        return 2*length + 2*width;
+        return 2 * length + 2 * width;
     }
 
-    /** Return a self-descriptive string of this instance in the form of Rectangle[length=?,width=?] */
+    /**
+     * Return a self-descriptive string of this instance in the form of Rectangle[length=?,width=?]
+     */
     public String toString() {
         return "Rectangle[length=" + length + ",width=" + width + "]";
     }

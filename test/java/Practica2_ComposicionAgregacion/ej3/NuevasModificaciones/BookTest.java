@@ -35,11 +35,11 @@ class BookTest {
 
     @Test
     void getQty() {
-        // Testeamos constructor 1 (qty por defecto = 0)
+        // Constructor 1 (qty por defecto = 0)
         Book book1 = new Book("123", "Libro A", dummyAuthor, 10.0);
         assertEquals(0, book1.getQty());
 
-        // Testeamos constructor 2 (qty asignada)
+        // Constructor 2 (qty asignada)
         Book book2 = new Book("456", "Libro B", dummyAuthor, 10.0, 50);
         assertEquals(50, book2.getQty());
     }

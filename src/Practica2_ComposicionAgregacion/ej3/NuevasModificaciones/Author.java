@@ -6,7 +6,10 @@ public class Author {
     private String email;
 
     //Constructors
-    /** Constructs an Author instance with the given name and email */
+
+    /**
+     * Constructs an Author instance with the given name and email
+     */
     Author(String name, String email) {
         this.name = name;
         this.email = email;
@@ -27,7 +30,9 @@ public class Author {
         this.email = email;
     }
 
-    /** Return a self-descriptive string of this instance in the form of Author[name=?,email=?] */
+    /**
+     * Return a self-descriptive string of this instance in the form of Author[name=?,email=?]
+     */
     public String toString() {
         return "Author[name=" + name + ",email=" + email + "]";
     }

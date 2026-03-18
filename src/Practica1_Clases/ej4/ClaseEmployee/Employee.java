@@ -7,8 +7,10 @@ public class Employee {
     private String lastName;
     private int salary;
 
-    /** Constructs an Employee instance with the given id, firstName, lastName and salary */
-    Employee( int id, String fistName, String lastName, int salary) {
+    /**
+     * Constructs an Employee instance with the given id, firstName, lastName and salary
+     */
+    Employee(int id, String fistName, String lastName, int salary) {
         this.id = id;
         this.firstName = fistName;
         this.lastName = lastName;
@@ -52,11 +54,13 @@ public class Employee {
 
     //Increase the salary by the percent and return the new salary
     public int raiseSalary(int percent) {
-        this.salary = salary * (percent+100) / 100;
+        this.salary = salary * (percent + 100) / 100;
         return salary;
     }
 
-    /** Return a self-descriptive string of this instance in the form of Circle[radius=?,color=?] */
+    /**
+     * Return a self-descriptive string of this instance in the form of Circle[radius=?,color=?]
+     */
     public String toString() {
         return "Employee[id=" + id + ",name='" + firstName + " " + lastName + ",salary=" + salary + ']';
     }
