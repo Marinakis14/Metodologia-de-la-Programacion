@@ -1,6 +1,6 @@
 # PL1
 
-## Asignatura: Estructuras De Datos
+## Asignatura: Metodología de la Programación
 
 ## Grupo: H12GEXTRA
 
